@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linux How To</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway:100,200,600,700" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./signup.html">Sign Up</a>
+      <a href="./login.html">Login</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Maintaining your Arch Linux</h1>
+    <section>
+      <article>
+        <img id="linux-logo" src="/assets/linux-log.png" alt="linux-logo" height="200px" width="175px"/>
+        <p class="beginning">
+          <span>Maintaining</span> Arch Linux may be confusing at first especially for a begginer like you.
+          Fear not, here I list several useful steps to make your Arch Linux becomes stable.
+          Even for you, linux guru out there, you might find these tips useful. So without
+          further ado, let's jump right into it!
+          <br />
+          <br />
+          <strong><em>DISCLAIMER: </strong>all risk are at your costs. Please do backup your
+          important data before doing all these steps right away!!!</em>
+        </p>
+        <ul>
+          <li>
+            Clean Pacman package cache
+            <section id="clean">
+              <p>sudo pacman -Scc</p>
+            </section>
+          </li> 
+          <li>
+            Remove unused packages (orphans)
+            <section id="clean">
+              <p>sudo pacman -R $(pacman -Qtdq)</p>
+            </section>
+          </li>
+          <li>
+            Clean cache in your /home
+            <section id="clean">
+              <p>rm -rf ~/.cache/*</p>
+            </section>
+          </li>
+          <li>
+            Remove old configuration files
+            <section id="clean">
+              <p>Remove manually at ~/.local/share</p>
+            </section>
+          </li>
+          <li>
+            Find broken symlinks
+            <section id="clean">
+              <p>sudo pacman -S rmlint</p>
+              <p>sh rmlint.sh</p>
+            </section>
+          </li>
+          <li>
+            Find files that takes up the most disk space
+            <section id="clean">
+              <p>sudo pacman -S ncdu</p>
+              <p>ncdu</p>
+            </section>
+          </li>
+          <li>
+            Use disk cleaning program (BleachBit)
+            <section id="clean">
+              <p>sudo pacman -S bleachbit</p>
+          </li>
+        </ul>
+        <br />
+        <p class="beginning">
+          I hope that some of these tips will help you out through your journey in using
+          Arch Linux. You can find out more of these stuffs at <a href="https://www.youtube.com/watch?v=3OoMvyHYWDY&list=LLSrcnUVmEUCkQbzVEgZJ9iw&index=10&t=0s">Average Linux User</a>. 
+          He made a ton of linux-related videos which I found useful. Check it out! Happy exploring!
+        </p>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <span>Powered by HTML5 & CSS3</span>
+  </footer>
+</body>
+</html>
