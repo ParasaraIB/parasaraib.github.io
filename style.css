@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+nav :hover{
+  color: white;
+}
+
+header {
+  background-color: rgb(9, 190, 172);
+  text-align: left;
+  position: sticky;
+  top: 0;
+}
+
+main h1 {
+  margin: 50px 20px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+body{
+  width: 100%;
+  background-color: rgb(223, 241, 241);
+}
+
+p {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: justify;
+  line-height: 30px;
+}
+
+footer {
+  bottom: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+#linux-logo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+li {
+  margin: 20px;
+  font-size: 20px;
+}
+
+#clean {
+  background-color: rgb(63, 66, 65);
+  color: white;
+  padding: 5px;
+  margin: 5px;
+}
+
+.beginning {
+  text-indent: 3em;
+}
+
+
+/* signup.html and login.html */
+
+.signup {
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+.form-box {
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+  background-color: rgb(9, 190, 172);
+  height: 50px;
+}
+
+.form-bottom {
+  max-width: 400px;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(193, 241, 237);
+  font-size: 10px;
+}
+
+.inside {
+  padding: 20px;
+  font-size: 18px;
+  display: block;
+}
+
