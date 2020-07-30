@@ -113,3 +113,10 @@ li {
   display: block;
 }
 
+.button {
+  background-color: rgb(9, 190, 172);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
